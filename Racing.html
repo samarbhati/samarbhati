@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racing Games</title>
+</head>
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #080b14;
+color: #e8edf7;
+line-height: 1.8;
+padding: 0;
+}
+
+/* ===== HEADER ===== */
+
+header {
+background: linear-gradient(135deg, #111827, #10102b, #19103b);
+padding: 35px 15px;
+text-align: center;
+border-bottom: 2px solid #00e5ff;
+box-shadow: 0 5px 25px rgba(0, 229, 255, 0.15);
+}
+
+header h2 {
+color: #00e5ff;
+font-size: clamp(23px, 4vw, 36px);
+text-transform: uppercase;
+letter-spacing: 1px;
+text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+max-width: 1100px;
+width: 92%;
+margin: 35px auto;
+}
+
+article {
+background: #111827;
+padding: 22px;
+border-left: 4px solid #00e5ff;
+border-radius: 10px;
+margin-bottom: 35px;
+color: #cbd5e1;
+font-size: 17px;
+}
+
+/* ===== GAME HEADINGS ===== */
+
+main h3 {
+color: #ffcc33;
+font-size: 25px;
+margin: 25px 0 15px;
+}
+
+main h3 u {
+text-decoration-color: #00e5ff;
+text-underline-offset: 6px;
+}
+
+/* ===== GAME IMAGES ===== */
+
+main img {
+display: block;
+width: 100%;
+max-width: 370px;
+height: 220px;
+object-fit: cover;
+border-radius: 14px;
+border: 2px solid #26334d;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+transition: transform 0.3s ease, border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+main img:hover {
+transform: scale(1.03);
+border-color: #00e5ff;
+box-shadow: 0 0 22px rgba(0, 229, 255, 0.3);
+}
+
+/* ===== PARAGRAPHS ===== */
+
+main p {
+margin: 15px 0;
+color: #cbd5e1;
+}
+
+main p b,
+main > b {
+color: #00e5ff;
+}
+
+/* ===== WEBSITE BUTTONS ===== */
+
+button {
+background: linear-gradient(135deg, #00e5ff, #0077ff);
+border: none;
+border-radius: 8px;
+padding: 12px 20px;
+margin-top: 8px;
+cursor: pointer;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button a {
+color: #050816;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+
+button:hover {
+transform: translateY(-3px);
+box-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
+}
+
+/* ===== HIGHLIGHT KEY POINTS ===== */
+
+ul {
+list-style: none;
+background: #111827;
+border: 1px solid #243047;
+border-radius: 12px;
+padding: 18px 22px;
+margin: 12px 0 20px;
+}
+
+ul li {
+padding: 7px 0;
+color: #dbe5f5;
+border-bottom: 1px solid #202a3c;
+}
+
+ul li:last-child {
+border-bottom: none;
+}
+
+ul li:hover {
+color: #00e5ff;
+}
+
+/* ===== BEST FOR SECTION ===== */
+
+main p b {
+color: #ffcc33;
+}
+
+main p:has(b) {
+background: #151629;
+padding: 15px;
+border-left: 4px solid #ffcc33;
+border-radius: 8px;
+}
+
+/* ===== SEPARATORS ===== */
+
+hr {
+border: none;
+height: 1px;
+background: linear-gradient(
+to right,
+transparent,
+#00e5ff,
+#7c3aed,
+transparent
+);
+margin: 35px 0;
+}
+
+/* ===== QUICK COMPARISON HEADING ===== */
+
+main h2 {
+color: #00e5ff;
+font-size: clamp(21px, 4vw, 30px);
+margin: 35px 0 20px;
+text-align: center;
+}
+
+/* ===== COMPARISON TABLE ===== */
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: #111827;
+border-radius: 12px;
+overflow: hidden;
+margin: 25px 0 40px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+thead {
+background: linear-gradient(135deg, #0077ff, #6d28d9);
+}
+
+th {
+color: white;
+padding: 16px 12px;
+text-align: left;
+font-size: 15px;
+}
+
+td {
+padding: 14px 12px;
+border-bottom: 1px solid #283348;
+color: #dbe5f5;
+}
+
+tbody tr {
+transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+background: #202b43;
+}
+
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+background: linear-gradient(135deg, #101323, #17102b);
+text-align: center;
+padding: 35px 15px;
+border-top: 2px solid #00e5ff;
+margin-top: 50px;
+}
+
+footer h3 {
+color: #00e5ff;
+font-size: 25px;
+letter-spacing: 2px;
+margin-bottom: 12px;
+}
+
+footer p {
+color: #9caec7;
+font-size: 14px;
+margin: 6px 0;
+}
+
+/* ===== MOBILE RESPONSIVE DESIGN ===== */
+
+@media (max-width: 600px) {
+
+main {
+    width: 92%;
+    margin: 22px auto;
+}
+
+header {
+    padding: 25px 12px;
+}
+
+article {
+    padding: 16px;
+    font-size: 15px;
+}
+
+main h3 {
+    font-size: 21px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+}
+
+button {
+    padding: 11px 14px;
+    max-width: 100%;
+}
+
+button a {
+    font-size: 12px;
+}
+
+ul {
+    padding: 14px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+table {
+    font-size: 12px;
+}
+
+th,
+td {
+    padding: 10px 6px;
+    overflow-wrap: anywhere;
+}
+
+footer h3 {
+    font-size: 21px;
+}
+
+  }
+  </style>
+<body>
+  <header>
+    <h2>
+      🏎‍🟀 Welcome to the World of Racing Games!
+    </h2>
+  </header><br>
+  
+  <main>
+    
+    <article>Here are my picks for the <b>Top 5 Racing Games</b>, that Experience the thrill of high-speed racing, powerful supercars, exciting drifts, and challenging tracks.</article>
+    
+    <h3>
+     🥇 1. <u>Asphalt Legends </u>
+    </h3>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3cVPDJd7U1KX82c8vneKwcxer__tpnP7X5s70_sYnAIpHh0KHlZ6la4&s=10" alt= "Your browser does not support this image" width="370"></div>
+    <br><p>For visiting the official website of Asphalt LEGENDS please <B>click on the button of ASPHALT LEGENDS</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://asphaltlegends.com/&sa=U&sqi=2&ved=2ahUKEwjBj8WRutSXAxWISmwGHU8IHjYQFnoECE4QAQ&usg=AOvVaw3Vcoq3rXH-YZuN-7vPpkzb" target="_blank"> ASPHALT LEGENDS</a></button><br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🏎‍🟀 Luxury aur supercars ki badi collection.</li>
+      <li>⚡ Nitro boost se extra speed.</li>
+      <li>🌍 Online multiplayer racing.</li>
+      <li>🔥 Amazing stunts aur drifting.</li>
+      <li>🎨 Cars ko customize karne ke options.</li>
+        
+    </ul>
+    <p><b>Best For : </b>🏆  Players who love supercars, nitro boosts, high-speed races, and amazing stunts.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🥈 2. <u>Need for Speed No Limits</h3></u>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpaLKwT6tUka1cB11w9OnV1CO7NvzLLk0MVDqu9nJOMEQ46uRvxHFrTArI&s=10"alt="Your browser does not support this image" width="370" >
+    
+    <br><p>For visiting the official website of NEED FOR SPEED NO LIMITS please <B>click on the button of NEED FOR SPEED NO LIMITS</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.ea.com/en/games/need-for-speed/need-for-speed-no-limits&sa=U&sqi=2&ved=2ahUKEwiJi_WNvtSXAxX4ieEIHdIWA0sQFnoECD4QAQ&usg=AOvVaw0Mv80lruV8BpxjtYz3l3aJ" target="_blank">NEED FOR SPEED NO LIMITS</a></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🏁 High-speed street racing.</li>
+      <li>🚘 Sports cars ko unlock aur upgrade karna.</li>
+      <li>🎨 Custom paint, body parts aur car modifications.</li>
+      <li>🏆 Different racing events aur challenges.</li>
+      <li>⚡ Fast-paced racing gameplay.</li>
+    </ul>
+    <p><b>Best for:</b> 🏆  Players who enjoy street racing, car customization, and underground racing challenges.</p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h3>🥉 3. <u>CarX Street</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RrcxvMnfBK9vx51TxXMAtjxzHVZm38wyLkVnqqu7qLlM-44TxQxLZ4k&s=10" alt="Your browser does not support this image" width="370">
+    
+    <br><p>For visiting the official website of CarX Street please <B>click on the button of CarX Street</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://store.steampowered.com/app/1114150/CarX_Street/&sa=U&sqi=2&ved=2ahUKEwjGteCDwNSXAxX4m-EIHRwUBlkQFnoECB0QAQ&usg=AOvVaw1Xx7Do40qUOuZb79BEEq9C" target="_blank">CarX Street<a/></button>
+      
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🌆 Open-world city driving.</li>
+      <li>🚗 Car customization aur performance upgrades.</li>
+      <li>🏎‍🟀 Street racing challenges.</li>
+      <li>🔥 Drifting aur high-speed driving.</li>
+      <li>🛣️ City roads par free exploration.</li>
+    </ul>
+    <p><b>Best for:</b> 🏆 Players who love open-world driving, realistic car tuning, and street racing.</p>
+    <br>
+    <hr>
+    <br> 
+
+    
+    <h3>🏅 4. <u>GRID Autosport</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mEnfjPryqttVOSQ2Q6z2RCRDvFVS7G-YF3aovT2o1L599dkgEv781HE&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of Call of GRID Autosport please <B>click on the button of GRID Autosport</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.feralinteractive.com/en/games/gridautosport-ios/&sa=U&sqi=2&ved=2ahUKEwi86di6wtSXAxWFk-EIHRa8EWsQFnoECB8QAQ&usg=AOvVaw3ndTSOTpiUCbi6Pw5BU2Bt" target="_blank">GRID Autosport<a/></button>
+    <br><br>
+    <b>Highlight keys:</b>
+      <ul>
+        <li>🏁 Realistic circuit racing.</li>
+        <li>🚘 Different categories ki racing cars.</li>
+        <li>🎮 Detailed driving controls.</li>
+        <li>🏆 Multiple racing disciplines.</li>
+        <li>🛞 Arcade se zyada simulation-style driving.</li>
+      </ul>
+    <p><b>Best for:</b>🏆 Players who want realistic driving, professional circuit races, and competitive motorsports.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🏅 5. <u> Hill Climb Racing 2</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2wx4xtVu8Cf1xbxx8apMVnM3O2B0yj-tZj0TjklDbpCEIyjHyYE5VgA&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of Hill Climb Racing 2 please <B>click on the button of Hill Climb</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://fingersoft.com/games/hill-climb-racing-2/&sa=U&sqi=2&ved=2ahUKEwiO-v7MxNSXAxWJleEIHYKcEnUQFnoECDwQAQ&usg=AOvVaw0jnigylXW1ldWNN_XGRXoy" target="_blank">Hill Climb Racing 2<a/></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>⛰️ Hilly aur challenging tracks.</li>
+      <li>🚙 Different vehicles ko unlock karna.</li>
+      <li>🪙 Coins collect karke upgrades lena.</li>
+      <li>🏆 Racing competitions aur challenges.</li>
+      <li>😂 Fun physics aur entertaining gameplay.</li>
+    </ul>
+    <p><b>Best for:</b>🏆 Players who enjoy fun racing, challenging hills, vehicle upgrades, and entertaining physics-based gameplay.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>
+      📊 Quick Comparison: Top 5 Racing Games
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Game</th>
+          <th>Best Feature</th>
+          <th>Game Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Asphalt Legends</td>
+          <td>Super cars & Nitro</td>
+          <td>Arcade Racing</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Need For Speed No Limits</td>
+          <td>Street Racing</td>
+          <td>Street Racing</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>CarX street</td>
+          <td>Open World</td>
+          <td>Street Racing</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Grid Autosport</td>
+          <td>Realistic Driving</td>
+          <td>Simulation</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Hill Climb Racing 2</td>
+          <td>Fun Hill Racing</td>
+          <td>Casual Racing</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      
+  </main>
+  
+  <footer>
+    <h3>BHATI GAMING WORLD</h3>
+    <p>Your ultimate destination for gaming!</p>
+    <p>Explore Action, Racing, Survival and Adventure Games.</p>
+    <p>© 2026 BHATI GAMING WORLD. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+    </html>
