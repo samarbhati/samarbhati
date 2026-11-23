@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Royale Games</title>
+</head>
+  <style>/* =================================
+BHATI GAMING WORLD
+Modern Gaming Website CSS
+================================= */
+
+/* 1. Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #080b14;
+color: #f5f7ff;
+line-height: 1.7;
+padding: 0;
+}
+
+/* 2. Header */
+
+header {
+background: linear-gradient(135deg, #101b35, #171027, #07111f);
+text-align: center;
+padding: 45px 18px;
+border-bottom: 2px solid #00e5ff;
+box-shadow: 0 5px 25px rgba(0, 229, 255, 0.12);
+}
+
+header h2 {
+color: #ffffff;
+font-size: clamp(24px, 4vw, 38px);
+line-height: 1.4;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+/* 3. Main Content */
+
+main {
+width: 92%;
+max-width: 1150px;
+margin: 35px auto;
+}
+
+article {
+background: linear-gradient(135deg, #141c2e, #10101b);
+padding: 22px;
+border-left: 4px solid #00e5ff;
+border-radius: 10px;
+margin-bottom: 35px;
+color: #d6e0f5;
+font-size: 17px;
+}
+
+/* 4. Game Headings */
+
+h3 {
+color: #00e5ff;
+font-size: 25px;
+margin: 25px 0 18px;
+line-height: 1.5;
+}
+
+h3 u {
+text-decoration: none;
+border-bottom: 2px solid #ff3155;
+padding-bottom: 4px;
+}
+
+/* 5. Game Images */
+
+main img {
+display: block;
+width: 100%;
+max-width: 550px;
+height: auto;
+max-height: 310px;
+object-fit: cover;
+border-radius: 14px;
+border: 2px solid #263750;
+margin: 15px 0;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+transition: transform 0.3s ease,
+border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+main img:hover {
+transform: scale(1.02);
+border-color: #00e5ff;
+box-shadow: 0 0 22px rgba(0, 229, 255, 0.2);
+}
+
+/* 6. Paragraphs */
+
+p {
+color: #c4cce0;
+font-size: 16px;
+margin: 14px 0;
+}
+
+p b,
+main > b,
+main b {
+color: #ffffff;
+}
+
+/* 7. Gaming Buttons */
+
+button {
+background: linear-gradient(135deg, #00d9ff, #0077ff);
+border: none;
+border-radius: 8px;
+padding: 12px 23px;
+margin: 8px 0;
+box-shadow: 0 4px 18px rgba(0, 180, 255, 0.2);
+transition: 0.3s ease;
+}
+
+button a {
+color: #06101e;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+
+button:hover {
+transform: translateY(-3px);
+background: linear-gradient(135deg, #ff3155, #ff7b36);
+box-shadow: 0 5px 22px rgba(255, 49, 85, 0.3);
+}
+
+button:hover a {
+color: #ffffff;
+}
+
+/* 8. Game Highlights */
+
+ul {
+list-style: none;
+margin: 18px 0;
+padding: 0;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 12px;
+}
+
+ul li {
+background: linear-gradient(135deg, #151e30, #101522);
+padding: 15px;
+border: 1px solid #273650;
+border-radius: 9px;
+color: #dce6f8;
+font-size: 15px;
+transition: 0.3s ease;
+}
+
+ul li:hover {
+border-color: #00e5ff;
+background: #17243a;
+transform: translateY(-3px);
+}
+
+/* 9. Best For Section */
+
+p b {
+color: #00e5ff;
+}
+
+/* 10. Horizontal Divider */
+
+hr {
+border: none;
+height: 1px;
+background: linear-gradient(
+to right,
+transparent,
+#00e5ff,
+#ff3155,
+transparent
+);
+margin: 35px 0;
+}
+
+/* 11. Comparison Section */
+
+main h2 {
+color: #00e5ff;
+font-size: clamp(22px, 4vw, 30px);
+margin: 35px 0 20px;
+line-height: 1.5;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: #101522;
+border-radius: 10px;
+overflow: hidden;
+margin: 20px 0 40px;
+font-size: 14px;
+}
+
+thead {
+background: linear-gradient(135deg, #006b9b, #392477);
+}
+
+th {
+color: #ffffff;
+padding: 15px 12px;
+text-align: left;
+white-space: nowrap;
+}
+
+td {
+padding: 13px 12px;
+border-bottom: 1px solid #273247;
+color: #d4dced;
+text-align: left;
+}
+
+tbody tr:nth-child(even) {
+background: #151d2d;
+}
+
+tbody tr:hover {
+background: #1d2a40;
+}
+
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* 12. Footer */
+
+footer {
+background: linear-gradient(135deg, #111a2d, #090b13);
+border-top: 2px solid #00e5ff;
+text-align: center;
+padding: 35px 15px;
+margin-top: 50px;
+}
+
+footer h3 {
+font-size: 28px;
+color: #00e5ff;
+letter-spacing: 2px;
+margin: 0 0 12px;
+text-shadow: 0 0 12px rgba(0, 229, 255, 0.25);
+}
+
+footer p {
+color: #aab5cb;
+font-size: 14px;
+margin: 8px 0;
+}
+
+/* 13. Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+header {
+    padding: 30px 15px;
+}
+
+main {
+    width: 92%;
+    margin: 22px auto;
+}
+
+article {
+    padding: 17px;
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+main img {
+    max-height: 240px;
+}
+
+ul {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+ul li {
+    padding: 13px;
+    font-size: 14px;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+th,
+td {
+    padding: 11px;
+}
+
+footer h3 {
+    font-size: 23px;
+}
+
+}
+
+/* 14. Large Screen Improvements */
+
+@media (min-width: 900px) {
+
+main img {
+    max-width: 650px;
+}
+
+article {
+    font-size: 18px;
+}
+
+ul li {
+    font-size: 16px;
+}
+
+  }</style>
+<body>
+  <header>
+    <h2>
+       Welcome to the World of Battle Royale Games
+    </h2>
+  </header><br>
+  
+  <main>
+    
+    <article>Here are my picks for the <b>Top 5 Battle Royale Games</b>, considering graphics, gameplay, weapons, multiplayer features, and overall gaming experience</article>
+    
+    <h3>
+     🥇 1. <u>PUBG MOBILE </u>
+    </h3>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLkAc6nFvxmMpsx8sNIXlU2QpwSu-t2nFcPrCeAQVnx1n2EGE9csV9NA&s=10" alt= "Your browser does not support this image" width="370"></div>
+    <br><p>For visiting the official website of PUBG MIBILE please <B>click on the button of PUBG MOBILE</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.pubgmobile.com/en-US/home.shtml&sa=U&sqi=2&ved=2ahUKEwjO6oTR-c-XAxW4XWwGHZaGBaEQFnoECDsQAQ&usg=AOvVaw0zABTqgS9V8A1-V9Wn6HkB" target="_blank"> PUBG MOBILE</a></button><br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🎮 Realistic Graphics: Detailed environments and realistic combat.</li>
+      <li>🔫 Weapon Variety: Assault rifles, snipers, shotguns, and more.</li>
+      <li>🗺️ Multiple Maps: Explore maps such as Erangel, Miramar, and Sanhok.</li>
+      <li>👥 Squad Battles: Play solo, duo, or squad matches.</li>
+      <li>🏆 Competitive Gameplay: Ranked matches and esports competitions.</li>
+      <li>🚗 Vehicles: Drive cars and other vehicles across large maps.</li>
+      
+    </ul>
+    <p><b>Best For : </b>Players who enjoy realistic shooting, tactical gameplay, and competitive matches.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🥈 2. <u>Garena Free Fire</h3></u>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2ux4dgauyDA7_quCLOr5_9r2W5OS2sXLgnYfdO7p3OYWKmZP1V0GYrQu&s=10" alt="Your browser does not support this image" width="370">
+    
+    <br><p>For visiting the official website of Garena Free Fire please <B>click on the button of FREE FIRE</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://ff.garena.com/&sa=U&ved=2ahUKEwianK2T-M2XAxX3kuEIHf1DKKEQFnoECCYQAQ&usg=AOvVaw1Tuj5-n1je8FJY3Jl5ZtNx" target="_blank">FREE FIRE</a></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>⚡ Fast Matches: Battle royale matches typically last around 10 minutes.</li>
+      <li>📱 Mobile Friendly: Designed to be accessible on a wide range of smartphones.</li>
+      <li>🦸 Character Abilities: Choose characters with different special abilities.</li>
+      <li>🔥 Multiple Game Modes: Battle Royale, Clash Squad, and more.</li>
+      <li>🎯 Custom Rooms: Organize private matches and tournaments.</li>
+      <li>🏆 Esports: Features competitive tournaments and professional teams.</li>
+    </ul>
+    <p><b>Best for:</b> Players who enjoy fast-paced combat, headshots, character abilities, and mobile esports.</p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h3>🥉 3. <u>Fortnite</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeHCvD7r6TS3XyKmJoNmEwAWwC4HO8Z3gdhTZ5pY0g_21EFOu9KEEmBcVr&s=10" alt="Your browser does not support this image" width="370">
+    
+    <br><p>For visiting the official website of Fortnite please <B>click on the button of FORTNITE</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.fortnite.com/&sa=U&sqi=2&ved=2ahUKEwj1vb-M_s2XAxVXbWwGHa7RM9UQFnoECDQQAQ&usg=AOvVaw0XRjw3DUAQth97iYoQEyEv" target="_blank">FORTNITE<a/></button>
+      
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🏗️ Building System: Construct walls, ramps, and structures during battles.</li>
+      <li>🎨 Unique Graphics: Colorful visuals and distinctive character designs.</li>
+      <li>🔫 Creative Combat: Combine weapons, building, and movement.</li>
+      <li>🚫 Zero Build Mode: Enjoy battle royale without building structures.</li>
+      <li>🌎 Live Events: Special events, collaborations, and seasonal content.</li>
+      <li>🎮 Cross-Platform Play: Play with friends across supported platforms.</li>
+    </ul>
+    <p><b>Best for:</b> Players who enjoy creative gameplay, building strategies, and unique gaming experiences.</p>
+    <br>
+    <hr>
+    <br> 
+
+    
+    <h3>🏅 4. <u>Call of Duty: Warzone</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49h4bFqzXlZjjJybttqEUaRw7TwQVT8DOaOJLkNo2yMYoGEpLNNCw95Q&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of Call of Duty Warzone please <B>click on the button of CALL OF DUTY</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.callofduty.com/warzone&sa=U&sqi=2&ved=2ahUKEwi1lty0ic6XAxX6iuEIHdgEG34QFnoECCIQAQ&usg=AOvVaw2XN0egwQ9B5gwCR6cL6iBS" target="_blank">CALL OF DUTY<a/></button>
+    <br><br>
+    <b>Highlight keys:</b>
+      <ul>
+        <li>💥 Intense Gunfights: Fast, action-packed shooting.</li>
+        <li>🔫 Modern Weapons: A broad selection of firearms and equipment.</li>
+        <li>🪂 Battle Royale: Drop into combat zones, collect equipment, and fight to survive.</li>
+        <li>👥 Team Play: Coordinate with teammates to defeat opponents.</li>
+        <li>🎯 Weapon Customization: Configure weapon loadouts to suit your playstyle.</li>
+        <li>🖥️ High-End Experience: Particularly appealing to players with capable PCs or consoles.</li>
+      </ul>
+    <p><b>Best for:</b> Players who enjoy intense gunplay, modern military combat, and competitive squad battles.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🏅 5. <u>Apex Legends</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_y7w80PmE-I3VuueRiTkjMtwep67-5lEbGA3LfE1aP_rLL1uZvARyHbS&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of Apex Legends please <B>click on the button of APEX LEGENDS</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.ea.com/en/games/apex-legends/apex-legends&sa=U&sqi=2&ved=2ahUKEwiR6fSbjM6XAxUzR2cHHc49KLcQFnoECCIQAQ&usg=AOvVaw1yVXwwOgEPqO_G955mvm7m" target="_blank">APEX LEGENDS<a/></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🦸 Unique Legends: Each character has distinctive abilities.</li>
+      <li>⚡ Fast Movement: Slide, climb, and move quickly through combat zones.</li>
+      <li>🤝 Team-Based Combat: Coordinate with teammates and combine abilities.</li>
+      <li>🎯 Skill-Based Gunplay: Accuracy, positioning, and teamwork are important.</li>
+      <li>🗺️ Dynamic Maps: Explore different environments and combat locations.</li>
+      <li>🏆 Competitive Scene: Offers challenging gameplay for skilled players.</li>
+    </ul>
+    <p><b>Best for:</b> Players who enjoy fast movement, special abilities, and tactical team fights.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>
+      📊 Quick Comparison: Top 5 Battle Royale Games
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>PUBG MOBILE</th>
+          <th>Free Fire</th>
+          <th>Fortnite</th>
+          <th>Call of duty</th>
+          <th>Apex Legends</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Primary platform</td>
+          <td>Mobile</td>
+          <td>Mobile</td>
+          <td>PC, console, supported mobile platforms</td>
+          <td>PC, console</td>
+          <td>PC, console</td>
+        </tr>
+        <tr>
+          <td>Graphic style</td>
+          <td>Realistic</td>
+          <td>Stylized</td>
+          <td>Colourful</td>
+          <td>Realistic</td>
+          <td>Sci-fi</td>
+        </tr>
+        <tr>
+          <td>Match pace</td>
+          <td>Tactical</td>
+          <td>Fast</td>
+          <td>Variable</td>
+          <td>Intense</td>
+          <td>Fast</td>
+        </tr>
+        <tr>
+          <td>Special abilities</td>
+          <td>Limited</td>
+          <td>Yes</td>
+          <td>Depends on mode</td>
+          <td>Limited</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Building</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Yes, optional in zero build</td>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Best feature</td>
+          <td>Realistic combat</td>
+          <td>Short matches</td>
+          <td>Creative gameplay</td>
+          <td>Modern gunplay</td>
+          <td>Movement and abilities</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      
+  </main>
+  
+  <footer>
+    <h3>BHATI GAMING WORLD</h3>
+    <p>Your ultimate destination for gaming!</p>
+    <p>Explore Action, Racing, Survival and Adventure Games.</p>
+    <p>© 2026 BHATI GAMING WORLD. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+</html>8
