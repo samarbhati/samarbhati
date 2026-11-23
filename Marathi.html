@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHATI GAMING WORLD</title>
+</head>
+  <style>
+    /* =========================================
+BHATI GAMING WORLD
+Universal Multilingual Gaming Theme
+========================================= */
+
+:root {
+--bg: #070810;
+--surface: #101321;
+--surface-light: #191d30;
+--cyan: #00e5ff;
+--purple: #a855f7;
+--pink: #ff3cac;
+--gold: #ffd166;
+--text: #f5f7ff;
+--muted: #b9bfd5;
+--border: #292f4a;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* BODY */
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background:
+radial-gradient(ellipse at top, #171638 0%, transparent 55%),
+linear-gradient(135deg, #070810, #0b1020, #10091b);
+background-color: var(--bg);
+color: var(--text);
+line-height: 1.8;
+min-height: 100vh;
+padding: 20px;
+overflow-wrap: break-word;
+}
+
+/* HEADER */
+
+header {
+max-width: 1100px;
+margin: 0 auto 35px;
+padding: 22px 15px;
+background: linear-gradient(135deg, #11182b, #20123a);
+border: 1px solid var(--cyan);
+border-radius: 16px;
+box-shadow:
+0 0 12px rgba(0, 229, 255, 0.2),
+inset 0 0 15px rgba(168, 85, 247, 0.08);
+overflow: hidden;
+}
+
+header marquee {
+display: block;
+}
+
+header h2 {
+color: var(--cyan);
+font-size: clamp(18px, 3vw, 27px);
+line-height: 1.5;
+text-align: center;
+text-shadow: 0 0 12px rgba(0, 229, 255, 0.55);
+}
+
+/* MAIN CONTENT */
+
+main {
+width: 100%;
+max-width: 900px;
+margin: 0 auto;
+padding: clamp(20px, 5vw, 45px);
+background: rgba(16, 19, 33, 0.94);
+border: 1px solid var(--border);
+border-radius: 20px;
+box-shadow:
+0 0 25px rgba(0, 0, 0, 0.35),
+0 0 15px rgba(168, 85, 247, 0.08);
+}
+
+/* INTRO PARAGRAPH */
+
+main > p:first-child {
+color: var(--cyan);
+font-size: clamp(20px, 3vw, 26px);
+font-weight: bold;
+text-align: center;
+padding: 18px;
+margin-bottom: 15px;
+background: linear-gradient(
+135deg,
+rgba(0, 229, 255, 0.08),
+rgba(168, 85, 247, 0.12)
+);
+border: 1px solid rgba(0, 229, 255, 0.25);
+border-radius: 12px;
+}
+
+/* SECTION HEADINGS */
+
+main > b {
+display: block;
+color: var(--gold);
+font-size: clamp(19px, 3vw, 24px);
+margin: 18px 0 12px;
+text-shadow: 0 0 10px rgba(255, 209, 102, 0.2);
+}
+
+/* PARAGRAPHS */
+
+main p {
+color: var(--muted);
+font-size: 16px;
+margin: 15px 0;
+line-height: 1.9;
+}
+
+/* DIVIDERS */
+
+hr {
+border: none;
+height: 1px;
+margin: 25px 0;
+background: linear-gradient(
+90deg,
+transparent,
+var(--cyan),
+var(--purple),
+transparent
+);
+box-shadow: 0 0 8px rgba(0, 229, 255, 0.15);
+}
+
+/* LINE BREAK SPACING */
+
+br {
+line-height: 1.8;
+}
+
+/* GAMING POETRY CARD */
+
+pre {
+white-space: pre-wrap;
+overflow-wrap: anywhere;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 2;
+color: var(--text);
+background: linear-gradient(135deg, #15182a, #211431);
+border: 1px solid rgba(168, 85, 247, 0.55);
+border-left: 4px solid var(--pink);
+border-radius: 14px;
+padding: 22px;
+margin: 15px 0 25px;
+box-shadow: 0 0 18px rgba(168, 85, 247, 0.09);
+}
+
+/* HIGHLIGHTED FINAL MESSAGE */
+
+main > b:last-of-type {
+color: var(--cyan);
+text-align: center;
+font-size: clamp(17px, 2.5vw, 22px);
+padding: 18px;
+margin-top: 20px;
+background: rgba(0, 229, 255, 0.06);
+border: 1px solid rgba(0, 229, 255, 0.3);
+border-radius: 12px;
+text-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+/* FOOTER */
+
+footer {
+max-width: 1100px;
+margin: 35px auto 10px;
+padding: 20px 15px;
+background: linear-gradient(135deg, #151329, #101827);
+border: 1px solid var(--purple);
+border-radius: 16px;
+box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+overflow: hidden;
+}
+
+footer marquee {
+display: block;
+}
+
+footer h3 {
+color: var(--gold);
+font-size: clamp(16px, 2.5vw, 21px);
+text-align: center;
+line-height: 1.7;
+}
+
+/* TEXT SELECTION */
+
+::selection {
+color: #070810;
+background: var(--cyan);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+width: 9px;
+}
+
+::-webkit-scrollbar-track {
+background: #070810;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(var(--cyan), var(--purple));
+border-radius: 10px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+body {
+padding: 14px;
+}
+
+header {
+    margin-bottom: 22px;
+    padding: 18px 10px;
+}
+
+main {
+    padding: 24px 20px;
+}
+
+main p {
+    font-size: 15px;
+}
+
+pre {
+    padding: 17px;
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 22px;
+    padding: 16px 10px;
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+body {
+padding: 9px;
+line-height: 1.7;
+}
+
+header {
+    padding: 14px 8px;
+    border-radius: 12px;
+}
+
+header h2 {
+    font-size: 17px;
+}
+
+main {
+    padding: 18px 13px;
+    border-radius: 14px;
+}
+
+main > p:first-child {
+    font-size: 19px;
+    padding: 14px 10px;
+}
+
+main > b {
+    font-size: 19px;
+}
+
+main p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+pre {
+    padding: 14px 11px;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+footer {
+    padding: 14px 8px;
+    border-radius: 12px;
+}
+
+footer h3 {
+    font-size: 15px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+}
+  </style>
+<body>
+
+  <header>
+  <marquee><h2>
+    🎮 नमस्कार मंडळी! BHATI GAMING WORLD मध्ये तुमचं स्वागत आहे!
+  </h2></marquee>
+  </header>
+  <main>
+  <p>
+    काय म्हणता गेमर्स? चला, गेमिंगच्या भन्नाट दुनियेत प्रवेश करूया! 🔥
+  </p><hr><br>
+  <b>😂 गेमिंगची धमाल शायरी</b>
+  <pre>
+गेम खेळायला बसलो, जिंकायचा होता डाव,
+पहिल्याच मॅचमध्ये झाला गेम ओव्हर राव! 😂
+    
+विजयाचं स्वप्न, जोश होता भारी,
+नेटवर्क गेलं म्हणालं—आता माझी पाळी! 🤣
+    
+हेडशॉटचा जलवा, विजयाची शान,
+BHATI GAMING WORLD म्हणजे गेमर्सची जान!
+  </pre><hr><br>
+  <b>🌟 आमच्या वेबसाइटबद्दल</b>
+  <p>
+    BHATI GAMING WORLD ही गेमिंगची आवड असणाऱ्या लोकांसाठी तयार केलेली वेबसाइट आहे. येथे तुम्हाला वेगवेगळ्या गेम्सची माहिती मिळेल.
+  </p>
+  <p>
+    इथे Battle Royale, Racing, Action, Survival आणि Puzzle अशा गेमिंग प्रकारांबद्दल जाणून घेता येईल. लोकप्रिय गेम्सची वैशिष्ट्ये समजून घेता येतील आणि नवीन गेम्स शोधता येतील.
+  </p>
+  <p>
+    गेमर्सना एकाच ठिकाणी मनोरंजक आणि उपयुक्त गेमिंग माहिती देणे हा आमचा उद्देश आहे.
+  </p>
+  <p>
+    आमच्यासाठी गेमिंग म्हणजे फक्त खेळ नाही, तर मजा, रोमांच, आव्हान आणि सर्जनशीलतेचा अनुभव आहे.
+  </p>
+  <b>
+    नवे गेम शोधा, नवे आव्हान स्वीकारा आणि गेमिंगचा आनंद घ्या!
+  </b>
+  
+  <br><hr>
+  </main>
+  <footer>
+  <marquee><h3>
+    BHATI GAMING WORLD ला भेट दिल्याबद्दल मनापासून धन्यवाद! 🎮🔥
+  </h3></marquee>
+  </footer>
+  
+
+</body>
+</html>
