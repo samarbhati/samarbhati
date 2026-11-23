@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHATI GAMING WORLD - About us</title>
+</head>
+  <style>
+    /* ========================================
+BHATI GAMING WORLD - ABOUT US PAGE
+Premium Dark Neon Gaming Theme
+======================================== */
+
+:root {
+--bg: #070810;
+--surface: #101321;
+--surface-light: #191d30;
+--cyan: #00e5ff;
+--purple: #a855f7;
+--pink: #ff3cac;
+--gold: #ffd166;
+--text: #f5f7ff;
+--muted: #b9bfd5;
+--border: #292f4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background:
+radial-gradient(ellipse at top, #171638 0%, transparent 55%),
+linear-gradient(135deg, #070810, #0b1020, #10091b);
+background-color: var(--bg);
+color: var(--text);
+line-height: 1.8;
+min-height: 100vh;
+}
+
+/* ================= HEADER & NAVBAR ================= */
+
+.site-header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(7, 8, 16, 0.94);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+width: 90%;
+max-width: 1200px;
+min-height: 78px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+padding: 12px 0;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 10px;
+color: var(--text);
+text-decoration: none;
+font-size: 23px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.brand-icon {
+font-size: 32px;
+filter: drop-shadow(0 0 8px var(--cyan));
+}
+
+.brand strong {
+color: var(--cyan);
+text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.nav-links a {
+color: var(--muted);
+text-decoration: none;
+padding: 9px 16px;
+border: 1px solid transparent;
+border-radius: 8px;
+font-size: 15px;
+font-weight: bold;
+transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+color: var(--cyan);
+background: rgba(0, 229, 255, 0.08);
+border-color: rgba(0, 229, 255, 0.4);
+box-shadow: 0 0 12px rgba(0, 229, 255, 0.12);
+}
+
+/* ================= MAIN CONTENT ================= */
+
+main {
+width: 90%;
+max-width: 1100px;
+margin: 45px auto;
+padding: clamp(20px, 4vw, 45px);
+background: rgba(16, 19, 33, 0.94);
+border: 1px solid var(--border);
+border-radius: 22px;
+box-shadow:
+0 0 25px rgba(0, 0, 0, 0.3),
+0 0 20px rgba(168, 85, 247, 0.07);
+}
+
+/* ================= MAIN HEADING ================= */
+
+main h1 {
+color: var(--cyan);
+font-size: clamp(25px, 4vw, 38px);
+text-align: center;
+line-height: 1.4;
+margin-bottom: 30px;
+text-shadow: 0 0 15px rgba(0, 229, 255, 0.35);
+}
+
+/* ================= GAMING SHAYARI ================= */
+
+main h3 {
+color: var(--gold);
+font-size: clamp(17px, 2.5vw, 22px);
+line-height: 2;
+text-align: center;
+white-space: pre-line;
+padding: 25px 20px;
+margin: 25px 0;
+background: linear-gradient(135deg, #15182a, #211431);
+border: 1px solid rgba(168, 85, 247, 0.5);
+border-left: 4px solid var(--pink);
+border-radius: 15px;
+box-shadow: 0 0 18px rgba(168, 85, 247, 0.1);
+}
+
+/* ================= DESCRIPTION SECTIONS ================= */
+
+main section,
+main article {
+display: block;
+color: var(--muted);
+font-size: 16px;
+line-height: 1.9;
+margin: 20px 0;
+}
+
+main section {
+color: var(--cyan);
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+padding: 18px;
+background: rgba(0, 229, 255, 0.05);
+border: 1px solid rgba(0, 229, 255, 0.2);
+border-radius: 12px;
+}
+
+main article b {
+color: var(--gold);
+}
+
+/* ================= TAGLINE ================= */
+
+main > p {
+color: var(--text);
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+margin: 20px 0;
+}
+
+main > p:nth-of-type(1) {
+color: var(--pink);
+font-size: 21px;
+text-shadow: 0 0 10px rgba(255, 60, 172, 0.25);
+}
+
+main > p:nth-of-type(2) {
+color: var(--cyan);
+margin-top: 25px;
+}
+
+/* ================= LANGUAGE BUTTONS ================= */
+
+main > button {
+display: inline-block;
+min-width: 125px;
+margin: 8px;
+padding: 12px 18px;
+background: linear-gradient(135deg, #121a30, #201438);
+border: 1px solid var(--cyan);
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 0 8px rgba(0, 229, 255, 0.08);
+transition: 0.3s ease;
+}
+
+main > button a {
+display: block;
+color: var(--text);
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+}
+
+main > button:hover {
+background: linear-gradient(135deg, #063d52, #38205a);
+border-color: var(--pink);
+transform: translateY(-4px);
+box-shadow:
+0 0 15px rgba(0, 229, 255, 0.2),
+0 0 15px rgba(168, 85, 247, 0.15);
+}
+
+main > button:hover a {
+color: var(--cyan);
+}
+
+/* ================= HORIZONTAL LINES ================= */
+
+hr {
+width: 90%;
+max-width: 1100px;
+height: 1px;
+margin: 25px auto;
+border: none;
+background: linear-gradient(
+90deg,
+transparent,
+var(--cyan),
+var(--purple),
+transparent
+);
+}
+
+/* ================= OPINION FORM ================= */
+
+body > b {
+display: block;
+width: 90%;
+max-width: 1000px;
+margin: 25px auto 15px;
+color: var(--gold);
+font-size: 21px;
+text-align: center;
+}
+
+/* FORM */
+
+form {
+width: 90%;
+max-width: 1000px;
+margin: 20px auto 35px;
+padding: 28px;
+background: rgba(16, 19, 33, 0.96);
+border: 1px solid var(--border);
+border-radius: 18px;
+box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+/* RADIO OPTIONS */
+
+form div:first-child {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 12px;
+padding: 15px 0;
+}
+
+form label {
+color: var(--muted);
+font-size: 15px;
+cursor: pointer;
+}
+
+form input[type="radio"] {
+width: 17px;
+height: 17px;
+accent-color: var(--cyan);
+cursor: pointer;
+}
+
+/* COMMENT LABEL */
+
+form div:nth-of-type(2) {
+margin-top: 15px;
+}
+
+form div:nth-of-type(2) label {
+display: block;
+color: var(--cyan);
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+/* TEXTAREA */
+
+textarea {
+display: block;
+width: 100%;
+min-height: 120px;
+padding: 15px;
+color: var(--text);
+background: #090d19;
+border: 1px solid var(--border);
+border-radius: 10px;
+font-family: inherit;
+font-size: 15px;
+line-height: 1.7;
+resize: vertical;
+outline: none;
+transition: 0.3s ease;
+}
+
+textarea::placeholder {
+color: #777f9c;
+}
+
+textarea:focus {
+border-color: var(--cyan);
+box-shadow: 0 0 12px rgba(0, 229, 255, 0.12);
+}
+
+/* SUBMIT BUTTON */
+
+form > button[type="submit"] {
+display: block;
+min-width: 150px;
+margin: 15px auto 0;
+padding: 13px 25px;
+color: #070810;
+background: linear-gradient(135deg, var(--cyan), #69f5ff);
+border: none;
+border-radius: 10px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+form > button[type="submit"]:hover {
+background: linear-gradient(135deg, var(--purple), var(--pink));
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+margin-top: 35px;
+padding: 30px 15px;
+text-align: center;
+background: linear-gradient(135deg, #111426, #17112b);
+border-top: 1px solid var(--cyan);
+box-shadow: 0 -5px 20px rgba(0, 229, 255, 0.05);
+}
+
+footer marquee {
+display: block;
+color: var(--cyan);
+font-size: 25px;
+font-weight: bold;
+text-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+}
+
+footer p {
+color: var(--muted);
+font-size: 14px;
+margin-top: 10px;
+}
+
+footer p:last-child {
+color: var(--gold);
+margin-top: 18px;
+}
+
+/* ================= TEXT SELECTION ================= */
+
+::selection {
+color: #070810;
+background: var(--cyan);
+}
+
+/* ================= TABLET RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+.navbar {
+justify-content: center;
+padding: 15px 0;
+}
+
+.brand {
+    justify-content: center;
+    font-size: 21px;
+}
+
+.nav-links {
+    width: 100%;
+    gap: 5px;
+}
+
+.nav-links a {
+    padding: 8px 12px;
+}
+
+main {
+    margin: 28px auto;
+    padding: 25px 20px;
+}
+
+main h3 {
+    padding: 20px 14px;
+}
+
+form {
+    padding: 22px 16px;
+}
+
+main > button {
+    min-width: 115px;
+    margin: 6px;
+}
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 480px) {
+.navbar {
+width: 94%;
+}
+
+.brand {
+    font-size: 19px;
+}
+
+.brand-icon {
+    font-size: 27px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    padding: 7px 10px;
+}
+
+main {
+    width: 94%;
+    padding: 20px 13px;
+    border-radius: 15px;
+}
+
+main h1 {
+    font-size: 24px;
+}
+
+main h3 {
+    font-size: 16px;
+    padding: 17px 10px;
+    line-height: 1.9;
+}
+
+main section {
+    font-size: 16px;
+    padding: 14px 10px;
+}
+
+main article {
+    font-size: 14px;
+}
+
+main > p {
+    font-size: 16px;
+}
+
+main > p:nth-of-type(1) {
+    font-size: 18px;
+}
+
+main > button {
+    width: calc(50% - 18px);
+    min-width: 0;
+    margin: 6px;
+    padding: 11px 5px;
+}
+
+main > button a {
+    font-size: 14px;
+}
+
+body > b {
+    font-size: 18px;
+}
+
+form {
+    width: 94%;
+    padding: 20px 13px;
+}
+
+form div:first-child {
+    gap: 10px;
+}
+
+form label {
+    font-size: 13px;
+}
+
+textarea {
+    font-size: 14px;
+}
+
+footer marquee {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+    }
+  </style>
+<body>
+  <header class="site-header">
+    <nav class="navbar">    <a href="" class="brand">
+        <span class="brand-icon">🎮</span>
+        <span>BHATI <strong>GAMING</strong></span>
+    </a>
+
+    <div class="nav-links">
+        <a href="/Home/Homefile.html">Home</a>
+        <a href="/Home/game/Games.html">Games</a>
+        <a href="About us.html"class="active" >About Us</a>
+    </div>
+
+</nav>
+
+  </header>
+
+  <main>
+    <h1>🌍 Discover Our Gaming World in Your Language!</h1>
+    
+    <h3>
+      स्क्रीन के उस पार, रोमांच की एक नई दुनिया है,
+हर खेल में एक कहानी, हर मिशन में एक नई चुनौती है।
+अपनी पसंद का गेम चुनो, अपनी दुनिया बनाओ,
+BHATI GAMING WORLD के साथ गेमिंग का आनंद उठाओ!
+    </h3>
+    <section>
+      Every language has its own beauty, and every gamer has a story! 🎮✨
+    </section>
+    <br>
+    <article>
+      Choose your preferred language below to learn more about <b>BHATI GAMING WORLD</b>, our passion for gaming, and the exciting world of games.
+    </article>
+    <br>
+    <article>
+      नीचे दी गई भाषाओं में से अपनी पसंदीदा भाषा चुनें और <b>BHATI GAMING WORLD</b> के बारे में जानें। हमारी गेमिंग की दुनिया, हमारे जुनून और अलग-अलग गेम्स की खासियतों को अपनीाषा में पढ़ें।
+    </article>
+    <p>
+      Your Language, Your Gaming World! ❤️🔥
+    </p>
+    <br>
+    <p>
+      👇 Select Your Language to Continue 👇
+    </p>
+    
+    <button><a href="English.html">English</a></button>
+    <button><a href="Hindi.html">Hindi</a></button>
+    <button><a href="Rajasthani.html">Rajasthani</a></button>
+    <button><a href="Marwadi.html">Marwadi</a></button>
+    <button><a href="Gujarati.html">Gujarati</a></button>
+    <button><a href="Marathi.html">Marathi</a></button>
+    <button><a href="Punjabi.html">Punjabi</a></button>
+    <button><a href="Bangali.html">Bangali</a></button>
+    <button><a href="Tamil.html">Tamil</a></button>
+    <button><a href="Urdu.html">Urdu</a></button>
+  </main>
+  <hr><hr>
+  <b>Enter your opinion about my website</b>
+  <form action="About us.html">
+  <div>
+    <label for="Best">Best</label>
+    <input id="Best" type="radio" name="opinion">
+    <label for="Most outstanding">Most Outstanding</label>
+    <input id="Most outstanding" type="radio" name="opinion" required>
+    <label for="Bad">Bad</label>
+    <input id="Bad" type="radio" name="opinion" required>
+  </div>
+    <br>
+    <b>If you have any idea about my website then enter in this comment box</b><br>
+  <div>
+    <label for="comments">Comments</label>
+    <textarea id="comments" placeholder="Enter your comments or ideas" rows="4" required></textarea>
+  </div>
+    
+    <br><br>
+  
+  <button type="submit">Submit</button>
+  </form>
+  <br><hr>
+  
+  <footer>
+    <marquee>BHATI GAMING WORLD</marquee>
+    <p>Your ultimate destination for gaming!</p>
+    <p>Explore Action, Racing, Survival and Adventure Games.</p>
+    <p>© 2026 BHATI GAMING WORLD. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
