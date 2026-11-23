@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Games</title>
+</head>
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #080b14;
+color: #e8edf7;
+line-height: 1.8;
+overflow-wrap: break-word;
+}
+
+/* ===== HEADER ===== */
+
+header {
+background: linear-gradient(135deg, #080b14, #101b35, #17102d);
+padding: 40px 15px;
+text-align: center;
+border-bottom: 2px solid #00e5ff;
+box-shadow: 0 5px 25px rgba(0, 229, 255, 0.2);
+}
+
+header h2 {
+color: #00e5ff;
+font-size: clamp(24px, 4vw, 38px);
+text-transform: uppercase;
+letter-spacing: 1px;
+text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+width: 92%;
+max-width: 1100px;
+margin: 35px auto;
+}
+
+/* ===== INTRODUCTION ===== */
+
+article {
+background: linear-gradient(135deg, #111827, #121e35);
+padding: 22px;
+border-left: 4px solid #00e5ff;
+border-radius: 10px;
+margin-bottom: 35px;
+color: #cbd5e1;
+font-size: 17px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== GAME HEADINGS ===== */
+
+main h3 {
+color: #ffcc33;
+font-size: 27px;
+margin: 28px 0 18px;
+text-shadow: 0 0 10px rgba(255, 204, 51, 0.15);
+}
+
+main h3 u {
+text-decoration-color: #00e5ff;
+text-underline-offset: 6px;
+}
+
+/* ===== GAME IMAGES ===== */
+
+main img {
+display: block;
+width: 100%;
+max-width: 370px;
+height: 220px;
+object-fit: cover;
+border-radius: 14px;
+border: 2px solid #243b5a;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+transition: transform 0.3s ease,
+border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+main img:hover {
+transform: translateY(-4px);
+border-color: #00e5ff;
+box-shadow: 0 0 22px rgba(0, 229, 255, 0.4);
+}
+
+/* ===== PARAGRAPHS ===== */
+
+main p {
+margin: 15px 0;
+color: #cbd5e1;
+font-size: 16px;
+}
+
+main p b {
+color: #ffcc33;
+}
+
+/* ===== GAME WEBSITE BUTTONS ===== */
+
+button {
+background: linear-gradient(135deg, #00e5ff, #0077ff);
+border: none;
+border-radius: 8px;
+padding: 12px 22px;
+margin-top: 8px;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 229, 255, 0.15);
+transition: transform 0.25s ease,
+box-shadow 0.25s ease;
+}
+
+button a {
+color: #050816;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 0.5px;
+}
+
+button:hover {
+transform: translateY(-3px);
+box-shadow: 0 0 22px rgba(0, 229, 255, 0.5);
+}
+
+button:active {
+transform: scale(0.97);
+}
+
+/* ===== HIGHLIGHTS LIST ===== */
+
+main ul {
+list-style: none;
+background: linear-gradient(135deg, #111827, #101a2c);
+border: 1px solid #243b5a;
+border-radius: 12px;
+padding: 18px 22px;
+margin: 12px 0 20px;
+box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+main ul li {
+padding: 8px 0;
+color: #dbe5f5;
+border-bottom: 1px solid #202c40;
+transition: color 0.2s ease,
+padding-left 0.2s ease;
+}
+
+main ul li:last-child {
+border-bottom: none;
+}
+
+main ul li:hover {
+color: #00e5ff;
+padding-left: 6px;
+}
+
+/* ===== BEST FOR SECTION ===== */
+
+main p:has(b) {
+background: #111827;
+padding: 15px;
+border-left: 4px solid #ffcc33;
+border-radius: 8px;
+}
+
+main p b {
+color: #ffcc33;
+}
+
+/* ===== SEPARATOR LINE ===== */
+
+hr {
+border: none;
+height: 1px;
+background: linear-gradient(
+to right,
+transparent,
+#00e5ff,
+#7c3aed,
+transparent
+);
+margin: 38px 0;
+}
+
+/* ===== COMPARISON TABLE HEADING ===== */
+
+main h2 {
+color: #00e5ff;
+font-size: clamp(22px, 4vw, 30px);
+margin: 35px 0 20px;
+text-align: center;
+text-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+}
+
+/* ===== COMPARISON TABLE ===== */
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: #111827;
+border-radius: 12px;
+overflow: hidden;
+margin: 25px 0 40px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+background: linear-gradient(135deg, #0077ff, #1746a2);
+}
+
+th {
+color: #ffffff;
+padding: 16px 12px;
+text-align: left;
+font-size: 15px;
+}
+
+td {
+padding: 14px 12px;
+border-bottom: 1px solid #283348;
+color: #dbe5f5;
+}
+
+tbody tr {
+transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+background: #1c2b43;
+}
+
+tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+background: linear-gradient(135deg, #0a1020, #10152b);
+text-align: center;
+padding: 35px 15px;
+border-top: 2px solid #00e5ff;
+margin-top: 50px;
+box-shadow: 0 -5px 25px rgba(0, 229, 255, 0.08);
+}
+
+footer h3 {
+color: #00e5ff;
+font-size: 26px;
+letter-spacing: 2px;
+margin-bottom: 12px;
+text-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+}
+
+footer p {
+color: #9caec7;
+font-size: 14px;
+margin: 6px 0;
+}
+
+/* ===== MOBILE RESPONSIVE DESIGN ===== */
+
+@media (max-width: 600px) {
+
+header {
+    padding: 28px 12px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+main {
+    width: 92%;
+    margin: 22px auto;
+}
+
+article {
+    padding: 16px;
+    font-size: 15px;
+}
+
+main h3 {
+    font-size: 22px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+}
+
+main p {
+    font-size: 14px;
+}
+
+button {
+    padding: 11px 15px;
+    max-width: 100%;
+}
+
+button a {
+    font-size: 12px;
+}
+
+main ul {
+    padding: 14px;
+}
+
+main ul li {
+    font-size: 14px;
+}
+
+table {
+    font-size: 12px;
+}
+
+th,
+td {
+    padding: 10px 6px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    padding: 28px 12px;
+}
+
+footer h3 {
+    font-size: 21px;
+}
+
+  }
+  </style>
+<body>
+  <header>
+    <h2>
+       Welcome to the World of Puzzle Games!
+    </h2>
+  </header><br>
+  
+  <main>
+    
+    <article>Here are my picks for the <b>Top 5 🧩 Puzzle Games</b>, that Challenge your brain, solve mysterious puzzles, and unlock your true potential.</article>
+    
+    <h3>
+     🥇 1. <u>Portal 2</u>
+    </h3>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK37MpeYP8oVx0oH6eJz4qLfYpaic3bh2JxLAVHYbLgpjjUEGL81-VIco&s=10" alt= "Your browser does not support this image" width="370"></div>
+    <br><p>For visiting the official website of PORTAL 2 please <B>click on the button of PORTAL 2</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.thinkwithportals.com/&sa=U&sqi=2&ved=2ahUKEwi70JqF_deXAxW5juEIHbu9AdUQFnoECCgQAQ&usg=AOvVaw2pFd8Fhp2m3wCEECatSNci" target="_blank">PORTAL 2</a></button><br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🌀 Create portals to travel between different locations.</li>
+      <li>🧠 Solve challenging puzzles using logic and creativity.</li>
+      <li>📦 Manipulate objects to unlock doors and complete challenges.</li>
+      <li>🎯 Explore unique levels with increasingly difficult puzzles.</li>
+      <li>🤝 Enjoy a separate cooperative campaign with a friend.</li>
+    </ul>
+    <p><b>Best For : </b>Players who enjoy logical thinking, creative problem-solving and challenging 3D puzzles.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🥈 2. <u>Monument Valley</u></h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44n8MvyNNYAr_stG2HOw8VsenUwzIUzk3y30wnaoxttJt7o81fG-68T8&s=10"alt="Your browser does not support this image" width="370" >
+    
+    <br><p>For visiting the official website of MONUMENT VALLEY please <B>click on the button of MONUMENT VALLEY</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://store.steampowered.com/app/1927720/Monument_Valley/&sa=U&ved=2ahUKEwiAzNmA_teXAxVGiuEIHQOiEVgQFnoECFMQAQ&usg=AOvVaw0v6ct5Dm1IMPLtgE-E95GV" target="_blank">MONUMENT VALLEY</a></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🏛️ Explore beautiful architectural environments.</li>
+      <li>🔄 Rotate structures to reveal hidden pathways.</li>
+      <li>👁️ Solve puzzles using optical illusions and perspective.</li>
+      <li>🎨 Enjoy minimalist visuals and artistic designs.</li>
+      <li>🎵 Experience relaxing music and atmospheric gameplay.</li>
+    </ul>
+    <p><b>Best for:</b>🏆 Players who enjoy relaxing puzzles, beautiful visuals, optical illusions and creative level design.</p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h3>🥉 3. <u>The Room</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBt7kX-af0ptrFL90E8a5bIIUJrO5O9_LH-ID82rK3RWnh05e_gFIwW4KU&s=10" alt="Your browser does not support this image" width="370">
+    
+    <br><p>For visiting the official website of THE ROOM please <B>click on the button of THE ROOM</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://store.steampowered.com/app/288160/The_Room/&sa=U&ved=2ahUKEwj99bSZ_9eXAxUajeEIHe1VBEoQFnoECGMQAQ&usg=AOvVaw2Hi3yIbpUPj0paGF8yMS1Q" target="_blank">THE ROOM</a></button>
+      
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>🔐 Solve intricate mechanical puzzles and locked boxes.</li>
+      <li>🔍 Search for hidden clues and secret compartments.</li>
+      <li>🧩 Interact with mysterious objects to uncover their secrets.</li>
+      <li>🌑 Experience an atmospheric and mysterious environment.</li>
+      <li>🧠 Use observation and logical reasoning to progress.</li>
+    </ul>
+    <p><b>Best for:</b>🏆 Players who love mystery-solving, hidden objects, intricate puzzles and immersive environments.</p>
+    <br>
+    <hr>
+    <br> 
+
+    
+    <h3>🏅 4. <u>Cut the Rope </u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRze1_giY9nbPcFH6EWYx8KJM9nyQaiMZLiGind7qNGb6afGLgjuR2OypkV&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of CUT THE ROPE please <B>click on the button of CUT THE ROPE</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://www.crazygames.com/game/cut-the-rope-ebx&sa=U&ved=2ahUKEwjCouOsgNiXAxV8jOEIHRJjGsEQFnoECCcQAQ&usg=AOvVaw1AMXoZ04tw2IrQCtwKgZw4" target="_blank">CUT THE ROPE</a></button>
+    <br><br>
+    <b>Highlight keys:</b>
+      <ul>
+        <li>🍬 Guide candy to Om Nom to complete each level.</li>
+        <li>✂️ Cut ropes in the correct order to solve puzzles.</li>
+        <li>⚙️ Use physics and moving objects to your advantage.</li>
+        <li>⭐ Collect stars for better level scores.</li>
+        <li>🎯 Progress through levels with new mechanics and challenges.</li>
+      </ul>
+    <p><b>Best for:</b>🏆 Players who enjoy casual puzzle games, physics-based challenges and short, entertaining levels.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>🏅 5. <u>Brain It On! — Physics Puzzles</u></h3>
+    <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFFSs6VRq1u9jYDPb2PFMBiFXH8YTQjLag8HYBWnEw-fQNlXn4jnT340&s=10" alt="Your browser does not support this image" width="370">
+    <br><p>For visiting the official website of BRAIN IT ON! please <B>click on the button of BRAIN IT ON!</B></p>
+    <button><a href="https://www.google.com/url?opi=89978449&q=https://brainitongame.org/&sa=U&ved=2ahUKEwiozYqjgdiXAxULkeEIHcQ3D0AQFnoECCsQAQ&usg=AOvVaw2MeVm4KHf9ouLe6RceP2Qt" target="_blank">BRAIN IT ON!<a></button>
+    <br><br>
+    <b>Highlight keys:</b>
+    <ul>
+      <li>✏️ Draw shapes to solve different challenges.</li>
+      <li>🧠 Test your logic and creative problem-solving skills.</li>
+      <li>⚖️ Experiment with gravity, movement and physics.</li>
+      <li>🧩 Discover multiple ways to solve certain puzzles.</li>
+      <li>🏆 Challenge yourself to complete levels efficiently.</li>
+    </ul>
+    <p><b>Best for:</b>🏆 Players who enjoy brain teasers, physics experiments, drawing-based puzzles and creative problem-solving.</p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>
+      📊 Quick Comparison: Top 5 Puzzle Games
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Game</th>
+          <th>Best Feature</th>
+          <th>Game Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Portal 2</td>
+          <td>Portal-based puzzle solving</td>
+          <td>3D Puzzle Adventure</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Monument Valley</td>
+          <td>Optical illusions and architecture</td>
+          <td>Visual Puzzle</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>The Room</td>
+          <td>Mystery and mechanical puzzles</td>
+          <td>Mystery Puzzle</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Cut The Rope</td>
+          <td>Physics-based candy puzzles</td>
+          <td>Casual Physics Puzzle</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Brain it On!</td>
+          <td>Drawing and physics challenges</td>
+          <td>Brain Training Puzzle</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      
+  </main>
+  
+  <footer>
+    <h3>BHATI GAMING WORLD</h3>
+    <p>Your ultimate destination for gaming!</p>
+    <p>Explore Action, Racing, Survival and Adventure Games.</p>
+    <p>© 2026 BHATI GAMING WORLD. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+    </html>
