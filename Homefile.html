@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhati Gaming World</title>
+</head>
+  <style>
+    /* ==========================================
+BHATI GAMING WORLD
+PREMIUM COSMIC GAMING THEME
+========================================== */
+
+/* 1. RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+:root {
+--bg: #050713;
+--surface: #0c1428;
+--surface-light: #121e38;
+--cyan: #00f5ff;
+--blue: #3478ff;
+--purple: #9d4edd;
+--pink: #ff3cac;
+--gold: #ffd166;
+--text: #f4f7ff;
+--muted: #b4c0da;
+--border: rgba(0, 245, 255, 0.2);
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: var(--text);
+line-height: 1.8;
+overflow-x: hidden;
+
+background:
+radial-gradient(ellipse at 5% 10%, rgba(0, 110, 255, 0.18), transparent 35%),
+radial-gradient(ellipse at 95% 25%, rgba(157, 78, 221, 0.18), transparent 32%),
+radial-gradient(ellipse at 50% 75%, rgba(0, 245, 255, 0.06), transparent 40%),
+var(--bg);
+
+background-attachment: fixed;
+}
+
+/* 2. NAVBAR */
+
+.site-header {
+position: sticky;
+top: 0;
+z-index: 1000;
+
+background: rgba(5, 7, 19, 0.9);
+backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(18px);
+
+border-bottom: 1px solid rgba(0, 245, 255, 0.35);
+
+box-shadow:
+0 8px 30px rgba(0, 0, 0, 0.4),
+0 1px 15px rgba(0, 245, 255, 0.08);
+}
+
+.navbar {
+width: 92%;
+max-width: 1250px;
+min-height: 82px;
+margin: auto;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 25px;
+}
+
+/* 3. BRAND LOGO */
+
+.brand {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+
+color: white;
+text-decoration: none;
+font-size: 21px;
+font-weight: 900;
+letter-spacing: 1px;
+white-space: nowrap;
+
+transition: 0.3s ease;
+}
+
+.brand:hover {
+transform: scale(1.03);
+filter: drop-shadow(0 0 12px rgba(0, 245, 255, 0.4));
+}
+
+.brand strong {
+color: var(--cyan);
+text-shadow: 0 0 15px rgba(0, 245, 255, 0.45);
+}
+
+.brand-icon {
+font-size: 32px;
+filter: drop-shadow(0 0 12px var(--blue));
+}
+
+/* 4. NAVIGATION LINKS */
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 9px;
+}
+
+.nav-links a {
+position: relative;
+display: inline-block;
+padding: 10px 17px;
+
+color: #c9d5ee;
+text-decoration: none;
+font-size: 14px;
+font-weight: 700;
+
+border: 1px solid transparent;
+border-radius: 10px;
+
+transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+color: var(--cyan);
+background: rgba(0, 245, 255, 0.07);
+border-color: rgba(0, 245, 255, 0.35);
+transform: translateY(-2px);
+box-shadow: 0 5px 18px rgba(0, 245, 255, 0.08);
+}
+
+.nav-links a.active {
+color: #ffffff;
+background: linear-gradient(135deg, #075985, #3730a3);
+border-color: rgba(0, 245, 255, 0.6);
+
+box-shadow:
+0 0 15px rgba(0, 245, 255, 0.15),
+inset 0 0 12px rgba(0, 245, 255, 0.05);
+}
+
+/* 5. MAIN CONTENT */
+
+main {
+width: 90%;
+max-width: 1150px;
+margin: 40px auto 75px;
+}
+
+/* 6. MAIN HEADING */
+
+h1 {
+position: relative;
+color: white;
+text-align: center;
+
+font-size: clamp(28px, 4.5vw, 46px);
+font-weight: 900;
+line-height: 1.4;
+letter-spacing: 1px;
+
+margin: 35px 0 30px;
+
+background: linear-gradient(
+90deg,
+#ffffff,
+#8be9ff,
+#c4a1ff,
+#ffffff
+);
+
+background-size: 250% auto;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: titleGlow 7s linear infinite;
+}
+
+@keyframes titleGlow {
+to {
+background-position: 250% center;
+}
+}
+
+/* 7. SECTION HEADINGS */
+
+h2 {
+position: relative;
+
+color: var(--cyan);
+font-size: clamp(23px, 3.5vw, 32px);
+line-height: 1.5;
+
+margin: 48px 0 18px;
+padding: 0 0 12px 16px;
+
+border-bottom: 1px solid rgba(0, 245, 255, 0.2);
+border-left: 4px solid var(--blue);
+
+text-shadow: 0 0 18px rgba(0, 245, 255, 0.18);
+}
+
+/* 8. SUBHEADINGS */
+
+h3 {
+color: #b8a1ff;
+font-size: 24px;
+line-height: 1.5;
+
+margin: 35px 0 16px;
+padding: 13px 16px;
+
+background: linear-gradient(
+90deg,
+rgba(52, 120, 255, 0.12),
+rgba(157, 78, 221, 0.06),
+transparent
+);
+
+border-left: 4px solid var(--purple);
+border-radius: 0 12px 12px 0;
+
+transition: all 0.3s ease;
+}
+
+h3:hover {
+border-left-color: var(--cyan);
+color: var(--cyan);
+padding-left: 22px;
+}
+
+/* 9. DIVIDER */
+
+hr {
+height: 2px;
+border: none;
+
+background: linear-gradient(
+90deg,
+transparent,
+var(--blue),
+var(--cyan),
+var(--purple),
+transparent
+);
+
+margin: 30px 0;
+box-shadow: 0 0 12px rgba(0, 245, 255, 0.15);
+}
+
+/* 10. PARAGRAPHS */
+
+p {
+color: var(--muted);
+font-size: 16px;
+margin: 18px 0;
+line-height: 1.9;
+}
+
+p b,
+b {
+color: #ffffff;
+}
+
+main > b {
+display: inline-block;
+
+margin: 20px 0;
+padding: 10px 15px;
+
+color: var(--gold);
+font-size: 16px;
+letter-spacing: 0.4px;
+
+background: linear-gradient(
+90deg,
+rgba(255, 209, 102, 0.09),
+transparent
+);
+
+border-left: 3px solid var(--gold);
+border-radius: 0 8px 8px 0;
+}
+
+/* 11. HERO IMAGE */
+
+.hero-image {
+position: relative;
+width: 100%;
+max-width: 950px;
+margin: 32px auto;
+
+overflow: hidden;
+border-radius: 22px;
+
+background: var(--surface);
+border: 1px solid rgba(0, 245, 255, 0.55);
+
+box-shadow:
+0 0 25px rgba(0, 245, 255, 0.13),
+0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.hero-image::after {
+content: "";
+position: absolute;
+inset: 0;
+pointer-events: none;
+
+background: linear-gradient(
+135deg,
+rgba(0, 245, 255, 0.1),
+transparent 40%,
+rgba(157, 78, 221, 0.12)
+);
+}
+
+.hero-image img {
+display: block;
+width: 100%;
+max-width: none;
+height: clamp(230px, 42vw, 440px);
+
+object-fit: cover;
+object-position: center;
+
+margin: 0;
+border: none;
+border-radius: 0;
+box-shadow: none;
+
+transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.hero-image:hover img {
+transform: scale(1.045);
+filter: saturate(1.2) brightness(1.08);
+}
+
+/* 12. CATEGORY IMAGES */
+
+main img {
+display: block;
+
+width: 100%;
+max-width: 650px;
+height: auto;
+max-height: 350px;
+
+object-fit: cover;
+object-position: center;
+
+margin: 22px auto;
+
+border: 1px solid rgba(157, 78, 221, 0.4);
+border-radius: 17px;
+
+background: var(--surface);
+
+box-shadow:
+0 12px 30px rgba(0, 0, 0, 0.4),
+0 0 12px rgba(157, 78, 221, 0.06);
+
+transition:
+transform 0.35s ease,
+border-color 0.35s ease,
+box-shadow 0.35s ease,
+filter 0.35s ease;
+}
+
+main img:hover {
+transform: translateY(-5px) scale(1.01);
+
+border-color: var(--cyan);
+
+box-shadow:
+0 0 22px rgba(0, 245, 255, 0.2),
+0 15px 35px rgba(0, 0, 0, 0.4);
+
+filter: saturate(1.12);
+}
+
+/* 13. CLICKABLE CATEGORY IMAGES */
+
+main a:has(img) {
+display: block;
+width: 100%;
+max-width: 650px;
+margin: 0 auto;
+
+border-radius: 17px;
+}
+
+/* Hero image keeps its own size */
+
+.hero-image {
+max-width: 950px;
+}
+
+.hero-image img {
+max-width: none;
+}
+
+/* 14. GAMING LISTS */
+
+ul {
+list-style: none;
+
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 15px;
+
+margin: 24px 0;
+}
+
+li {
+position: relative;
+overflow: hidden;
+
+color: #dce6ff;
+padding: 17px 18px;
+
+background: linear-gradient(
+135deg,
+rgba(18, 30, 56, 0.95),
+rgba(12, 17, 36, 0.95)
+);
+
+border: 1px solid rgba(52, 120, 255, 0.25);
+border-radius: 13px;
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+transition:
+transform 0.3s ease,
+border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+li::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+
+width: 3px;
+height: 100%;
+
+background: linear-gradient(
+to bottom,
+var(--cyan),
+var(--purple)
+);
+
+opacity: 0.8;
+}
+
+li:hover {
+transform: translateY(-4px);
+
+border-color: rgba(0, 245, 255, 0.6);
+
+box-shadow:
+0 10px 28px rgba(0, 0, 0, 0.3),
+0 0 16px rgba(0, 245, 255, 0.08);
+}
+
+/* 15. FOOTER */
+
+footer {
+margin-top: 70px;
+padding: 38px 18px;
+
+text-align: center;
+
+background:
+radial-gradient(
+ellipse at 50% 0%,
+rgba(52, 120, 255, 0.13),
+transparent 65%
+),
+#070914;
+
+border-top: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+footer h3 {
+border: none;
+padding: 0;
+
+color: var(--cyan);
+font-size: 26px;
+}
+
+footer p {
+color: #929fbd;
+font-size: 14px;
+margin: 8px 0;
+}
+
+/* 16. MOBILE NAVBAR */
+
+@media (max-width: 650px) {
+.navbar {
+width: 94%;
+min-height: auto;
+padding: 14px 0;
+
+flex-direction: column;
+gap: 12px;
+
+}
+
+.brand {
+font-size: 20px;
+}
+
+.nav-links {
+width: 100%;
+justify-content: center;
+gap: 5px;
+}
+
+.nav-links a {
+padding: 9px 12px;
+font-size: 13px;
+}
+
+main {
+width: 92%;
+margin-top: 25px;
+}
+
+h1 {
+font-size: 28px;
+}
+
+h2 {
+font-size: 23px;
+margin-top: 35px;
+}
+
+h3 {
+font-size: 20px;
+}
+
+p {
+font-size: 15px;
+}
+
+.hero-image {
+border-radius: 14px;
+}
+
+.hero-image img {
+height: 230px;
+}
+
+main img {
+max-height: 260px;
+border-radius: 13px;
+}
+
+ul {
+grid-template-columns: 1fr;
+gap: 11px;
+}
+
+li {
+padding: 14px;
+font-size: 14px;
+}
+}
+
+/* 17. SMALL PHONES */
+
+@media (max-width: 360px) {
+.brand {
+font-size: 17px;
+}
+
+.nav-links {
+gap: 2px;
+}
+
+.nav-links a {
+padding: 8px;
+font-size: 12px;
+}
+
+h1 {
+font-size: 24px;
+}
+
+.hero-image img {
+height: 190px;
+}
+}
+
+/* 18. ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+scroll-behavior: auto !important;
+transition-duration: 0.01ms !important;
+animation-duration: 0.01ms !important;
+}
+
+h1 {
+animation: none;
+}
+  }
+    /* ==========================================
+PREMIUM GAMING FOOTER
+========================================== */
+
+.gaming-footer {
+position: relative;
+margin-top: 80px;
+padding: 55px 5% 20px;
+overflow: hidden;
+
+background:
+radial-gradient(
+ellipse at 10% 0%,
+rgba(52, 120, 255, 0.16),
+transparent 40%
+),
+radial-gradient(
+ellipse at 90% 20%,
+rgba(157, 78, 221, 0.15),
+transparent 38%
+),
+linear-gradient(180deg, #0b1021, #050713);
+
+border-top: 1px solid rgba(0, 245, 255, 0.45);
+
+box-shadow:
+0 -10px 35px rgba(0, 0, 0, 0.25),
+0 -2px 20px rgba(0, 245, 255, 0.04);
+}
+
+/* TOP GLOW LINE */
+
+.gaming-footer::before {
+content: "";
+position: absolute;
+top: 0;
+left: 15%;
+width: 70%;
+height: 2px;
+
+background: linear-gradient(
+90deg,
+transparent,
+#00f5ff,
+#9d4edd,
+#ff3cac,
+transparent
+);
+
+box-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
+}
+
+/* FOOTER LAYOUT */
+
+.footer-container {
+width: 100%;
+max-width: 1250px;
+margin: auto;
+
+display: grid;
+grid-template-columns: 1.5fr 0.8fr 1fr 1.1fr;
+gap: 35px;
+}
+
+/* BRAND */
+
+.footer-brand {
+display: inline-block;
+margin-bottom: 18px;
+
+color: #ffffff;
+text-decoration: none;
+font-size: 21px;
+font-weight: 900;
+letter-spacing: 0.5px;
+
+transition: 0.3s ease;
+}
+
+.footer-brand span {
+color: #00f5ff;
+text-shadow: 0 0 12px rgba(0, 245, 255, 0.3);
+}
+
+.footer-brand:hover {
+transform: translateY(-2px);
+text-shadow: 0 0 15px rgba(0, 245, 255, 0.25);
+}
+
+/* FOOTER INTRODUCTION */
+
+.footer-about p,
+.footer-social p {
+color: #aebbd6;
+font-size: 14px;
+line-height: 1.9;
+margin: 10px 0 18px;
+}
+
+/* FOOTER HEADINGS */
+
+.footer-links h3,
+.footer-social h3 {
+color: #00f5ff;
+font-size: 17px;
+margin: 0 0 20px;
+padding: 0 0 10px;
+
+background: none;
+border: none;
+border-bottom: 1px solid rgba(0, 245, 255, 0.2);
+border-radius: 0;
+
+text-shadow: 0 0 12px rgba(0, 245, 255, 0.15);
+}
+
+/* REMOVE GENERAL H3 HOVER EFFECT */
+
+.footer-links h3:hover,
+.footer-social h3:hover {
+padding-left: 0;
+color: #00f5ff;
+border-left: none;
+}
+
+/* FOOTER LINKS */
+
+.footer-links a {
+display: block;
+width: fit-content;
+max-width: 100%;
+margin: 11px 0;
+
+color: #b8c4df;
+text-decoration: none;
+font-size: 14px;
+
+transition:
+color 0.25s ease,
+transform 0.25s ease;
+}
+
+.footer-links a:hover {
+color: #00f5ff;
+transform: translateX(5px);
+}
+
+/* GAMING TAGLINE */
+
+.gaming-footer .footer-tagline {
+display: inline-block;
+margin: 12px 0 0;
+padding: 9px 12px;
+
+color: #ffd166;
+font-size: 13px;
+letter-spacing: 0.5px;
+
+background: rgba(255, 209, 102, 0.06);
+border: 1px solid rgba(255, 209, 102, 0.2);
+border-radius: 8px;
+}
+
+/* FEEDBACK BUTTON */
+
+.footer-contact {
+display: inline-block;
+margin-top: 5px;
+padding: 11px 15px;
+
+color: #ffffff;
+background: linear-gradient(110deg, #075985, #4338ca);
+
+text-decoration: none;
+font-size: 13px;
+font-weight: bold;
+
+border: 1px solid rgba(0, 245, 255, 0.4);
+border-radius: 9px;
+
+box-shadow: 0 0 15px rgba(0, 245, 255, 0.08);
+
+transition: all 0.3s ease;
+}
+
+.footer-contact:hover {
+transform: translateY(-3px);
+
+background: linear-gradient(110deg, #4338ca, #075985);
+
+box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
+}
+
+/* BOTTOM FOOTER */
+
+.footer-bottom {
+width: 100%;
+max-width: 1250px;
+margin: 45px auto 0;
+padding-top: 22px;
+text-align: center;
+
+border-top: 1px solid rgba(157, 78, 221, 0.25);
+}
+
+.footer-bottom > p:first-child {
+color: #c6b4ff;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 1px;
+margin: 0 0 18px;
+}
+
+.footer-line {
+width: 100px;
+height: 2px;
+margin: 0 auto 18px;
+
+background: linear-gradient(90deg, #00f5ff, #9d4edd);
+border-radius: 5px;
+
+box-shadow: 0 0 12px rgba(0, 245, 255, 0.25);
+}
+
+.footer-bottom .copyright {
+color: #a5b0c9;
+font-size: 13px;
+margin: 8px 0;
+}
+
+.footer-bottom .footer-credit {
+color: #ff9fcf;
+font-size: 13px;
+margin: 5px 0 0;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+.footer-container {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 35px 28px;
+}
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 520px) {
+.gaming-footer {
+margin-top: 55px;
+padding: 40px 6% 20px;
+}
+
+.footer-container {
+grid-template-columns: 1fr;
+gap: 30px;
+}
+
+.footer-brand {
+font-size: 19px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+font-size: 17px;
+margin-bottom: 14px;
+}
+
+.footer-about p,
+.footer-social p {
+font-size: 14px;
+}
+
+.footer-bottom {
+margin-top: 35px;
+}
+
+.footer-bottom > p:first-child {
+font-size: 12px;
+letter-spacing: 0.5px;
+}
+
+.footer-bottom .copyright,
+.footer-bottom .footer-credit {
+font-size: 12px;
+}
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+.footer-brand,
+.footer-links a,
+.footer-contact {
+transition: none;
+}
+}
+  </style>
+<body>
+  <header class="site-header">
+    <nav class="navbar">    <a href="" class="brand">
+        <span class="brand-icon">🎮</span>
+        <span>BHATI <strong>GAMING</strong></span>
+    </a>
+
+    <div class="nav-links">
+        <a href="Homefile.html" class="active">Home</a>
+        <a href="game/Games.html">Games</a>
+        <a href="About/About us.html">About Us</a>
+    </div>
+
+    </nav>
+
+  </header>
+  
+  <main>
+  <h1>🎮 WELCOME TO THE GAMING WORLD OF BHATI </h1>
+  <hr>
+  <div class="hero-image">
+    <img
+        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85"
+        alt="Gaming setup and esports arena" width="370">
+  </div>
+    
+  <p>Welcome to the ultimate destination for 🔥 <b>GAMING LOVERS!</b> Enter a world where <b>ACTION, ADVENTURE, COMPETITION,</b> and create an unforgettable gaming experience.</p>
+  <b>🚀 Level Up Your Gaming Experience!</b>
+    
+  <p>Discover exciting games, explore epic gaming worlds, improve your skills, and challenge yourself to become a true gaming champion. Whether you love <b>Battle Royale, Action Games, Survival Challenges, or Competitive Esports,</b> there is something here for every gamer!</p>
+    <b>🏆 PLAY • COMPETE • CONQUER</b>
+  <ul>
+    <li>⚡ <b>Epic Battles</b> – Experience thrilling gaming moments.</li>
+    <li>🎯 <b>Pro Gaming</b> – Improve your skills and master your strategy.</li>
+    <li>🔥 <b>Esports Tournaments</b> – Compete with other players and prove your talent.</li>
+  </ul>
+  <b>💎 YOUR GAME. YOUR RULES. YOUR LEGACY.</b>
+  
+  <h3>🔫 Battle Royale</h3>
+<a href="Battle Royale.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm55w30dS9m-QAeX22fZ3bowhlQemgx_8grZbroWIh4uREg-_T-QukEcg&s=10" Alt="image"width="370"></a>
+  <p>Enter the battlefield, survive against your enemies, and become the last player standing!</p>
+
+  
+  <h3>🏎‍🟀 Racing Games</h3>
+ <a href="Racing.html" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wk2orIAUID5pm5ofnNTrme33s7e8F5qOxskDDBsTBuIHoOI9PxeZuD8&s=10" Alt=""width="370"></a>
+  <p>Start your engines, race at incredible speeds, and prove that you are the ultimate racing champion!</p>
+  
+  
+  <h3>⚔️ Action Games</h3>
+  <a href="Action.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNFOZXjQxCk71twKC7-hMPfQxMsMGCs6nV56F54tUoh9ths-Z-C_ziGEC&s=10" Alt=""width="370"></a>
+  <p>Experience epic battles, powerful weapons, dangerous missions, and thrilling adventures.</p>
+  
+  
+  <h3>🧟 Survival Games</h3>
+<a href="Survival.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSniF0tA0tIymiZhJr6hRKSBIYufEMQGFuIEPiB1LggIw0PZDqqjtM8liPA&s=10" Alt=""width="370"></a>
+  <p>Test your survival skills, face dangerous challenges, and fight to survive in an unpredictable world.</p>  
+  
+  
+  <h3>🧠 Puzzle Games</h3>
+  <a href="Puzzle.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFEOcui5JVh57aP28LOmILGcD8v3VKfiql9VS7gvN0mEfpFcfZEuZ77wb2&s=10" Alt=""width="370"></a>
+
+  <p>Challenge your brain, solve mysterious puzzles, and unlock your true potential</p>
+  <h2>👑 BECOME A GAMING LEGEND</h2>
+  <p>Every champion starts as a beginner. Every victory begins with a challenge.</p>
+  <p>Train your skills, develop your strategy, learn from your mistakes, and never give up!</p>
+  <h3>🏆 THE ROAD TO VICTORY</h3>
+  <ul>
+    <li>🎯 Improve Your Aim</li>
+    <li>⚡ Master Your Skills</li>
+    <li>🧠 Build Winning Strategies</li>
+    <li>🔥 Challenge Your Limits</li>
+    <li>👑 Become A Champion</li>
+  </ul>
+  <b>REMEMBER: NEVER GIVE UP, NEVER STOP PLAYING!</b>
+  <h2>🌌 EXPLORE THE GAMING UNIVERSE</h2>
+  <p>Imagine a world where anything is possible. A world filled with mysterious galaxies, futuristic cities, legendary warriors, and powerful enemies.</p>
+  <p>From the darkest dungeons to the farthest galaxies, every adventure has a story waiting to be discovered.</p>
+  <h2>🚀 YOUR NEXT ADVENTURE STARTS NOW!</h2>
+  <p>Choose your world. Build your legend. Create your own gaming story.</p>
+  <b>THE UNIVERSE IS YOUR PLAYGROUND! 🌠</b>
+  <h2>💎 ABOUT GAMEVERSE</h2>
+  <p>Our goal is to celebrate gaming culture, explore different gaming genres, share gaming knowledge, and inspire players to improve their skills.</p>
+  <b>🔥 OUR MISSION</b>
+  <p>To bring the excitement of gaming into one place and create an amazing experience for every gaming enthusiast.</p>
+  
+  <h3>🎮 ONE WORLD. COUNTLESS GAMES. ENDLESS ADVENTURES.</h3>
+  <hr>
+  <h2>THANKS FOR VISITING OUR SIDE</h2>
+  
+    
+    
+  
+  </main>
+  
+    <footer class="gaming-footer">
+  <div class="footer-container"><div class="footer-about">
+  <a href="Homefile.html" class="footer-brand">
+    🎮 BHATI <span>GAMING WORLD</span>
+  </a>
+
+  <p>
+    Welcome to BHATI GAMING WORLD — your destination for
+    action, adventure, racing, survival and puzzle games.
+    Explore new worlds, discover exciting games and level
+    up your gaming experience!
+  </p>
+
+  <h3 class="footer-tagline">
+    🎮 PLAY • EXPLORE • CONQUER
+  </h3>
+</div>
+
+<div class="footer-links">
+  <h3>Quick Links</h3>
+  <a href="Homefile.html">🏠 Home</a>
+  <a href="game/Games.html">🎮 Games</a>
+  <a href="About/About us.html">🌍 About Us</a>
+</div>
+
+<div class="footer-links">
+  <h3>Explore Games</h3>
+  <a href="Battle Royale.html">🔫 Battle Royale</a>
+  <a href="Racing.html">🏎‍🟀 Racing Games</a>
+  <a href="Action.html">⚔️ Action Games</a>
+  <a href="Survival.html">🧟 Survival Games</a>
+  <a href="Puzzle.html">🧠 Puzzle Games</a>
+</div>
+
+<div class="footer-social">
+  <h3>Connect With Us</h3>
+
+  <p>
+    Love gaming? Keep exploring, learning and discovering
+    your next favourite game!
+  </p>
+
+  <a href="About/About us.html" class="footer-contact">
+    💬 Share Your Feedback
+  </a>
+</div>
+
+  </div>  <div class="footer-bottom">
+    <p>🌌 ONE WORLD. COUNTLESS GAMES. ENDLESS ADVENTURES.</p><div class="footer-line"></div>
+
+<p class="copyright">
+  © 2026 BHATI GAMING WORLD. All Rights Reserved.
+</p>
+
+<p class="footer-credit">
+  Made with ❤️ for Gaming Lovers
+</p>
+
+  </div>
+    </footer>
+  
+
+  
+</body>
+</html>
